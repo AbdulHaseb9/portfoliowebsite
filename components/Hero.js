@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa6";
 // import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
@@ -13,9 +14,22 @@ export default function Hero() {
         <h2 className="text-white font-bold text-4xl text-center md:text-left md:text-5xl mb-4">
           Hi, I'm Haseeb Sheikh
         </h2>
-        <p className="text-primary_color font-semibold text-2xl text-center md:text-3xl md:text-left">
-          Frontend Developer
-        </p>
+        {/* npm typing animation */}
+        <TypeAnimation
+          sequence={[
+            "Frontend Developer",
+            1000,
+            "Backend Developer",
+            1000,
+            "Mern-Stack Developer",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          className="text-primary_color font-semibold text-2xl text-center md:text-3xl md:text-left"
+          repeat={Infinity}
+        />
+        <p></p>
         <p className="text-white text-justify w-full md:w-1/2 mt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam
           quam harum beatae totam incidunt rerum maxime dignissimos ducimus,
