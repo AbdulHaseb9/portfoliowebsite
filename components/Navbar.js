@@ -8,6 +8,7 @@ import { ImCross } from "react-icons/im";
 export default function Navbar() {
   const pathname = usePathname();
   const [respnav, setrespnav] = useState(false);
+
   return (
     // Navbar
     <nav className="fixed top-4 left-0 w-full flex items-center justify-between text-white px-6 md:px-10 lg:px-14 large:px-16">
