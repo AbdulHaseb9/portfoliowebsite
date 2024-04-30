@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { FaFacebookF } from "react-icons/fa6";
 // import { FaLinkedinIn } from "react-icons/fa";
 // import { FaXTwitter } from "react-icons/fa6";
@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <div className="h-screen w-full flex items-center py-28 text-center md:text-left">
+    <div className="padding bg-bg_color h-screen w-full flex items-center py-28 text-center md:text-left">
       <div>
         <h2 className="text-white font-bold text-4xl text-center md:text-left md:text-5xl mb-4">
           Hi, I'm Haseeb Sheikh
@@ -29,7 +29,6 @@ export default function Hero() {
           className="text-primary_color font-semibold text-2xl text-center md:text-3xl md:text-left"
           repeat={Infinity}
         />
-        <p></p>
         <p className="text-white text-justify w-full md:w-1/2 mt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ullam
           quam harum beatae totam incidunt rerum maxime dignissimos ducimus,

@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     // Navbar
-    <nav className="fixed top-4 left-0 w-full flex items-center justify-between text-white px-6 md:px-10 lg:px-14 large:px-16">
+    <nav className="fixed top-4 left-0 w-full flex items-center justify-between text-white padding">
       {/* Logo */}
       <div className="flex items-center gap-x-5">
         <button className="md:hidden" onClick={() => setrespnav(true)}>
@@ -64,7 +64,7 @@ export default function Navbar() {
       </div>
       {/* Responsive sidebar that enable when user click on hamburger */}
       <div
-        className={`transition-all duration-500 bg-bg_color w-9/12 h-screen fixed ${
+        className={`z-50 transition-all duration-500 bg-bg_color w-9/12 h-screen fixed ${
           respnav ? `-left-0` : `-left-full`
         } top-0 flex flex-col justify-center items-center md:hidden`}
       >
