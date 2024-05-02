@@ -76,7 +76,10 @@ export default function Skills() {
   ];
 
   return (
-    <div id="skill" className="lg:h-screen w-full bg-secondary_color padding py-12">
+    <div
+      id="skill"
+      className="large:h-screen w-full bg-secondary_color padding py-12"
+    >
       <h2 className="text-center text-4xl font-semibold text-white">
         My <span className="text-primary_color">Skills</span>
       </h2>

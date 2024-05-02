@@ -30,9 +30,9 @@ export default function Navbar() {
           Home
         </Link>
         <Link
-          href={"about"}
+          href={"#journey"}
           className={`${
-            pathname === "/about" ? "text-primary_color" : "text-white"
+            pathname === "/#journey" ? "text-primary_color" : "text-white"
           }`}
         >
           About

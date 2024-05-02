@@ -4,7 +4,7 @@ export default function Contact() {
   return (
     <div
       id="contactme"
-      className="md:h-screen w-full bg-bg_color py-28 padding"
+      className="md:h-screen w-full bg-bg_color py-12  padding"
     >
       <h2 className="text-center text-4xl font-semibold text-white">
         Contact <span className="text-primary_color">Me!</span>
