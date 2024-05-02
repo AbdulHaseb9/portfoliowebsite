@@ -26,7 +26,7 @@ export default function Hero() {
           ]}
           wrapper="span"
           speed={50}
-          className="text-primary_color font-semibold text-2xl text-center md:text-3xl md:text-left"
+          className="-z-10 text-primary_color font-semibold text-2xl text-center md:text-3xl md:text-left"
           repeat={Infinity}
         />
         <p className="text-white text-justify w-full md:w-1/2 mt-4">

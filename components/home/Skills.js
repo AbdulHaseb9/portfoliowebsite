@@ -1,19 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import html5 from "../public/html5.png";
-import css3 from "../public/css3.png";
-import javascript from "../public/javascript.png";
-import bootstrap from "../public/bootstrap.png";
-import react from "../public/reactjs.png";
-import mongodb from "../public/mongodb.svg";
-import nodejs from "../public/nodejs.png";
-import expressjs from "../public/expressjs.webp";
-import github from "../public/github.png";
-import tailwindcss from "../public/tailwindcss.png";
-import postman from "../public/postman.png";
-import redux from "../public/react_redux.png";
-import firebase from "../public/firebase.png";
-import netlify from "../public/netlify.png";
+import html5 from "@/public/skills/html5.png";
+import css3 from "@/public/skills/css3.png";
+import javascript from "@/public/skills/javascript.png";
+import bootstrap from "@/public/skills/bootstrap.png";
+import react from "@/public/skills/reactjs.png";
+import mongodb from "@/public/skills/mongodb.svg";
+import nodejs from "@/public/skills/nodejs.png";
+import expressjs from "@/public/skills/expressjs.webp";
+import github from "@/public/skills/github.png";
+import tailwindcss from "@/public/skills/tailwindcss.png";
+import postman from "@/public/skills/postman.png";
+import redux from "@/public/skills/react_redux.png";
+import firebase from "@/public/skills/firebase.png";
+import netlify from "@/public/skills/netlify.png";
 
 export default function Skills() {
   const Skills = [
@@ -76,7 +76,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className="lg:h-screen w-full bg-secondary_color padding py-12">
+    <div id="skill" className="lg:h-screen w-full bg-secondary_color padding py-12">
       <h2 className="text-center text-4xl font-semibold text-white">
         My <span className="text-primary_color">Skills</span>
       </h2>

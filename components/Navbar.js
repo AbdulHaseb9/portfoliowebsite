@@ -38,12 +38,12 @@ export default function Navbar() {
           About
         </Link>
         <Link
-          href={"services"}
+          href={"#skill"}
           className={`${
-            pathname === "/services" ? "text-primary_color" : "text-white"
+            pathname === "#skill" ? "text-primary_color" : "text-white"
           }`}
         >
-          Service
+          Skills
         </Link>
         <Link
           href={"projects"}
@@ -54,7 +54,7 @@ export default function Navbar() {
           Projects
         </Link>
         <Link
-          href={"contactme"}
+          href={"#contactme"}
           className={`${
             pathname === "/contactme" ? "text-primary_color" : "text-white"
           }`}
