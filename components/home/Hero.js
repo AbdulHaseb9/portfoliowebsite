@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 
 export default function Hero() {
   return (
-    <div className="padding bg-bg_color h-screen w-full flex items-center py-28 text-center md:text-left">
+    <div id="main" className="padding bg-bg_color h-screen w-full flex items-center py-28 text-center md:text-left">
       <div>
         <h2 className="text-white font-bold text-4xl text-center md:text-left md:text-5xl mb-4">
           Hi, I'm Haseeb Sheikh

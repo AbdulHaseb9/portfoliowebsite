@@ -22,7 +22,7 @@ export default function Navbar() {
       {/* NavLinks */}
       <div className="hidden md:block space-x-8 md:text-sm lg:text-lg font-semibold">
         <Link
-          href={"/"}
+          href={"#main"}
           className={`${
             pathname === "/" ? "text-primary_color" : "text-white"
           }`}
@@ -73,7 +73,8 @@ export default function Navbar() {
         </div>
         <div className="h-5/6 text-center space-y-4 md:text-sm lg:text-lg font-semibold">
           <Link
-            href={"/"}
+            href={"#main"}
+            onClick={() => setrespnav(false)}
             className={`block ${
               pathname === "/" ? "text-primary_color" : "text-white"
             }`}
@@ -82,6 +83,7 @@ export default function Navbar() {
           </Link>
           <Link
             href={"about"}
+            onClick={() => setrespnav(false)}
             className={`block ${
               pathname === "/about" ? "text-primary_color" : "text-white"
             }`}
@@ -89,15 +91,17 @@ export default function Navbar() {
             About
           </Link>
           <Link
-            href={"services"}
+            href={"#skill"}
+            onClick={() => setrespnav(false)}
             className={`block ${
-              pathname === "/services" ? "text-primary_color" : "text-white"
+              pathname === "#skill" ? "text-primary_color" : "text-white"
             }`}
           >
-            Service
+            Skills
           </Link>
           <Link
             href={"projects"}
+            onClick={() => setrespnav(false)}
             className={`block ${
               pathname === "/projects" ? "text-primary_color" : "text-white"
             }`}
@@ -105,7 +109,8 @@ export default function Navbar() {
             Projects
           </Link>
           <Link
-            href={"contactme"}
+            href={"#contactme"}
+            onClick={() => setrespnav(false)}
             className={`block ${
               pathname === "/contactme" ? "text-primary_color" : "text-white"
             }`}
