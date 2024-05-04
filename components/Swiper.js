@@ -14,6 +14,7 @@ import Image from "next/image";
 import greenmind from "/public/projects/greenmind.png";
 import logoipsum from "/public/projects/logoipsum.png";
 import abrothers from "/public/projects/abrothers.png";
+import Link from "next/link";
 
 export default function SwiperCarousel() {
   const projectsdata = [
@@ -22,24 +23,24 @@ export default function SwiperCarousel() {
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, debitis eaque veniam voluptatum nostrum ipsa facilis maxime rem laboriosam quaerat mollitia blanditiis libero deleniti ut ex quo, vero reprehenderit at!",
       image: abrothers,
-      githuburl: "#",
-      liveurl: "#",
+      githuburl: "https://github.com/AbdulHaseb9/abrothers",
+      liveurl: "https://abrothers.vercel.app/",
     },
     {
       title: "Green Mind",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, debitis eaque veniam voluptatum nostrum ipsa facilis maxime rem laboriosam quaerat mollitia blanditiis libero deleniti ut ex quo, vero reprehenderit at!",
       image: greenmind,
-      githuburl: "#",
-      liveurl: "#",
+      githuburl: "https://github.com/AbdulHaseb9/Greenmind",
+      liveurl: "https://hsgreenmind.web.app/",
     },
     {
       title: "Logo Ipsum",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, debitis eaque veniam voluptatum nostrum ipsa facilis maxime rem laboriosam quaerat mollitia blanditiis libero deleniti ut ex quo, vero reprehenderit at!",
       image: logoipsum,
-      githuburl: "#",
-      liveurl: "#",
+      githuburl: "https://github.com/AbdulHaseb9/logoipsum",
+      liveurl: "https://logoipsumweb.netlify.app/#",
     },
   ];
   return (
@@ -72,18 +73,20 @@ export default function SwiperCarousel() {
                   {item.description}
                 </p>
                 <div className="space-x-6 my-9">
-                  <a
+                  <Link
                     href={item.liveurl}
+                    target="_blank"
                     className="text-white font-semibold tracking-wider px-4 py-3 md:px-6 md:py-3 border border-primary_color rounded-full cursor-pointer hover:bg-primary_color"
                   >
                     Live Demo
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={item.githuburl}
+                    target="_blank"
                     className="text-white font-semibold tracking-wider px-4 py-3 md:px-6 md:py-3 border border-primary_color rounded-full cursor-pointer hover:bg-primary_color"
                   >
                     Get Code
-                  </a>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
