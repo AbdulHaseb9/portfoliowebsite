@@ -1,22 +1,22 @@
 "use client";
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import toast, { Toaster } from "react-hot-toast";
+// import toast, { Toaster } from "react-hot-toast";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xzbnovod");
-  if (state.succeeded) {
-    toast.success("Message Sent!");
-    // return;
-  } else {
-    toast.error("Error!");
-  }
+  // if (state.succeeded) {
+  //   toast.success("Message Sent!");
+  //   return;
+  // } else {
+  //   toast.error("Error!");
+  // }
   return (
     <div
       id="contactme"
       className="md:h-screen w-full bg-bg_color py-12  padding"
     >
-      <Toaster />
+      {/* <Toaster /> */}
       <h2 className="text-center text-4xl font-semibold text-white">
         Contact <span className="text-primary_color">Me!</span>
       </h2>

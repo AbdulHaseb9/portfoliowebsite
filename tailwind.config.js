@@ -14,6 +14,7 @@ module.exports = {
         bg_color: "#081B29",
         primary_color: "#18A9EA",
         secondary_color: "#122E43",
+        text_secondary_color: "#eaeaea",
       },
     },
   },
