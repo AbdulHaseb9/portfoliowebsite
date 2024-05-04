@@ -55,7 +55,7 @@ export default function SwiperCarousel() {
           return (
             <SwiperSlide
               key={index}
-              className="py-8 flex gap-x-5 gap-y-14 flex-col md:flex-row md:h-96 large:h-[440px] overflow-hidden"
+              className="py-8 flex gap-x-5 flex-col md:flex-row md:h-96 large:h-[440px] overflow-hidden"
             >
               <div className="h-72 md:h-full w-full md:w-1/2 lg:p-10">
                 <Image
@@ -64,7 +64,7 @@ export default function SwiperCarousel() {
                   alt={item.title}
                 />
               </div>
-              <div className="w-full md:w-1/2 lg:p-10">
+              <div className="w-full md:w-1/2 lg:p-10 mt-8 md:mt-0">
                 <h3 className="text-primary_color text-2xl font-semibold tracking-wider">
                   {item.title}
                 </h3>
