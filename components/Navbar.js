@@ -46,9 +46,9 @@ export default function Navbar() {
           Skills
         </Link>
         <Link
-          href={"projects"}
+          href={"#projects"}
           className={`${
-            pathname === "/projects" ? "text-primary_color" : "text-white"
+            pathname === "#projects" ? "text-primary_color" : "text-white"
           }`}
         >
           Projects
@@ -100,10 +100,10 @@ export default function Navbar() {
             Skills
           </Link>
           <Link
-            href={"projects"}
+            href={"#projects"}
             onClick={() => setrespnav(false)}
             className={`block ${
-              pathname === "/projects" ? "text-primary_color" : "text-white"
+              pathname === "#projects" ? "text-primary_color" : "text-white"
             }`}
           >
             Projects

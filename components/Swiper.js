@@ -53,7 +53,10 @@ export default function SwiperCarousel() {
       >
         {projectsdata.map((item, index) => {
           return (
-            <SwiperSlide className="py-8 flex gap-x-5 gap-y-8 flex-col md:flex-row md:h-96 large:h-[440px] overflow-hidden">
+            <SwiperSlide
+              key={index}
+              className="py-8 flex gap-x-5 gap-y-14 flex-col md:flex-row md:h-96 large:h-[440px] overflow-hidden"
+            >
               <div className="h-72 md:h-full w-full md:w-1/2 lg:p-10">
                 <Image
                   src={item.image}
