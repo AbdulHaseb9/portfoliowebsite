@@ -6,10 +6,15 @@ import { FaFacebookF } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+// import resume from "@/public/resume.pdf";
+import Link from "next/link";
 
 export default function Hero() {
   return (
-    <div id="main" className="padding bg-bg_color h-screen w-full flex items-center py-28 text-center md:text-left">
+    <div
+      id="main"
+      className="padding bg-bg_color h-screen w-full flex items-center py-28 text-center md:text-left"
+    >
       <div>
         <h2 className="text-white font-bold text-4xl text-center md:text-left md:text-5xl mb-4">
           Hi, I'm Haseeb Sheikh
@@ -37,12 +42,22 @@ export default function Hero() {
         </p>
         {/* Buttons */}
         <div className="flex justify-center space-x-9 md:block my-5">
-          <button className="bg-primary_color border border-primary_color px-3 md:px-7 py-3 rounded-md font-bold hover:bg-transparent hover:text-primary_color">
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            locale={false}
+            download
+            className="border border-primary_color text-primary_color px-3 md:px-7 py-3 rounded-md font-bold hover:bg-primary_color hover:text-black"
+          >
             Download CV
-          </button>
-          <button className="border border-primary_color text-primary_color px-3 md:px-7 py-3 rounded-md font-bold hover:bg-primary_color hover:text-black">
+          </Link>
+          <Link
+            href="#contactme"
+            className="border border-primary_color text-primary_color px-3 md:px-7 py-3 rounded-md font-bold hover:bg-primary_color hover:text-black"
+          >
             Let's Talk
-          </button>
+          </Link>
         </div>
         {/* Social Links */}
         <div className="text-white flex justify-center md:justify-normal gap-x-7 text-xl mt-14">

@@ -33,6 +33,7 @@ export default function Contact() {
               type="text"
               name="Fullname"
               placeholder="FullName"
+              required
               className="w-full border-2 border-primary_color bg-transparent px-3 py-2 outline-none text-white rounded-md"
             />
             <ValidationError
@@ -47,6 +48,7 @@ export default function Contact() {
               type="email"
               name="Email"
               placeholder="Email Address"
+              required
               className="w-full border-2 border-primary_color bg-transparent px-3 py-2 outline-none text-white rounded-md"
             />
             <ValidationError
@@ -75,6 +77,7 @@ export default function Contact() {
               type="text"
               name="subject"
               placeholder="Email Subject"
+              required
               className="w-full border-2 border-primary_color bg-transparent px-3 py-2 outline-none text-white rounded-md"
             />
             <ValidationError
@@ -90,6 +93,7 @@ export default function Contact() {
               rows="10"
               placeholder="Enter Your Message"
               name="message"
+              required
               className="w-full border-2 border-primary_color bg-transparent px-3 py-2 outline-none text-white rounded-md"
             />
             <ValidationError
