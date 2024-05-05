@@ -12,10 +12,7 @@ export default function Contact() {
   //   toast.error("Error!");
   // }
   return (
-    <div
-      id="contactme"
-      className="md:h-screen w-full bg-bg_color py-12  padding"
-    >
+    <div id="contactme" className="w-full bg-bg_color py-7 padding">
       {/* <Toaster /> */}
       <h2 className="text-center text-4xl font-semibold text-white">
         Contact <span className="text-primary_color">Me!</span>

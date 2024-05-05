@@ -4,7 +4,7 @@ export default function Journey() {
   return (
     <div
       id="journey"
-      className="xl:h-screen w-full bg-secondary_color py-20 padding"
+      className="w-full bg-secondary_color py-10 padding"
     >
       <h2 className="text-center text-4xl font-semibold text-white">
         My <span className="text-primary_color">Journey</span>

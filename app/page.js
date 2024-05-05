@@ -2,7 +2,7 @@ import Hero from "@/components/home/Hero";
 import Skills from "@/components/home/Skills";
 import Contact from "@/components/home/Contact";
 import Journey from "@/components/home/Journey";
-import Projects from "@/components/home/Projects";
+import Projectscarousel from "@/components/Projectscarousel";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Skills />
       <Contact />
       <Journey />
-      <Projects />
+      <Projectscarousel />
     </main>
   );
 }

@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <div
       id="main"
-      className="padding bg-bg_color h-screen w-full flex items-center py-28 text-center md:text-left"
+      className="padding bg-bg_color md:h-screen w-full flex items-center py-28 text-center md:text-left"
     >
       <div>
         <h2 className="text-white font-bold text-4xl text-center md:text-left md:text-5xl mb-4">
