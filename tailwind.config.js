@@ -1,21 +1,22 @@
-
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      colors: {
-        primary: '#7B2DEE',
-        secondary: '#DDDDDD',
+      screens: {
+        large: "1440px",
       },
-      backgroundImage: {
-        'hero-pattern': "url('/comingsoon_bg.png')",
-      }
+      colors: {
+        bg_color: "#081B29",
+        primary_color: "#18A9EA",
+        secondary_color: "#122E43",
+        text_secondary_color: "#eaeaea",
+      },
     },
   },
   plugins: [],
-}
+};
